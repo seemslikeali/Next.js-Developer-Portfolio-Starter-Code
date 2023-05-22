@@ -8,7 +8,9 @@ const Skill = ({ name, x, y }) => {
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: x, y: y }}
-            transition={{ duration: 1.5 }}>
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+        >
             {name}
         </motion.div>
     )
@@ -23,14 +25,14 @@ const Skills = () => {
                 <motion.div className='flex items-center cursor-pointer justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark'
                     whileHover={{ scale: 1.05 }}>web</motion.div>
 
-                <Skill name="CSS" x="20vw" y="-5vw" />
+                <Skill name="CSS" x="-23vw" y="0vw" />
                 <Skill name="HTML" x="15vw" y="-12vw" />
                 <Skill name="JavaScript" x="10vw" y="-18vw" />
                 <Skill name="React" x="0vw" y="-20vw" />
                 <Skill name="Python" x="-10vw" y="-17vw" />
                 <Skill name="NodeJS" x="-15vw" y="-12vw" />
-                <Skill name="C" x="-20vw" y="-5vw" />
-
+                <Skill name="Express" x="-23vw" y="-4.5vw" />
+                <Skill name="C" x="-20vw" y="-8.5vw" />
                 <Skill name="Mips" x="-20vw" y="5vw" />
                 <Skill name="C++" x="-15vw" y="12vw" />
                 <Skill name="C#" x="-10vw" y="17vw" />
