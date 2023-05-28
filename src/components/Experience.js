@@ -46,64 +46,52 @@ const Experience = () => {
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <Details
 
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="google.ca"
-                        time="2022-present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."
+                        position="Web Developer"
+                        company="Vitalité 55+"
+                        companyLink="https://en.vitalite55sk.ca/"
+                        time="2020"
+                        address="308 4e avenue nord - Bureau 213, S7K 2L7 Saskatoon"
+                        work="I meticulously designed and developed a user-friendly website tailored specifically to the needs of the elderly, prioritizing accessibility, simplicity, and intuitive navigation to ensure a seamless online experience for them. "
+
+                    />
+                    <Details
+
+                        position="Web Developer"
+                        company="Shakeel's Restaurant"
+                        time="2019"
+                        address="3110 8 St E #7, Saskatoon, SK S7H 0W2"
+                        work="Designed and developped their website from the ground up but they closed their doors."
+                    />
+
+                    <Details
+
+                        position="Web Developper"
+                        company="RSFS"
+                        companyLink="https://rsfs.ca/"
+                        time="2019"
+                        address="220-308, 4e Avenue Nord Saskatoon (SK)"
+                        work="From the ground up, I dedicated myself to building a website specifically catered to the needs of French speakers in the healthcare sector. By prioritizing accessibility, user-friendliness, and tailored content, I ensured a seamless online experience that empowered individuals to navigate and access vital health information effortlessly."
 
                     />
 
                     <Details
 
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="google.ca"
-                        time="2022-present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-
-                    />
-
-                    <Details
-
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="google.ca"
-                        time="2022-present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+                        position="Web Developer"
+                        company="Fédération des Francophones de Saskatoon"
+                        companyLink="https://www.francosaskatoon.ca/"
+                        time="2018"
+                        address="308 4th Ave N, #211 Saskatoon, SK S7K 2L7, Canada"
+                        work="I autonomously designed and developed a bespoke website for a French community and its leaders, prioritizing their specific requirements. The result was a professional, user-centric platform that facilitated seamless communication, collaboration, and empowerment."
 
                     />
                     <Details
 
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="google.ca"
-                        time="2022-present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-
-                    />
-                    <Details
-
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="google.ca"
-                        time="2022-present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+                        position="Web Developer"
+                        company="Kabab King Restaurant"
+                        companyLink="https://www.kababking.ca/"
+                        time="2015-present"
+                        address="3110 8 St E #7, Saskatoon, SK S7H 0W2"
+                        work="I have been actively involved in the ongoing design and development of Kabab King's website, continuously enhancing its features and aesthetics. By combining my design expertise with the unique requirements of the establishment, I created a visually appealing and user-friendly online platform that showcases the restaurant's offerings and provides a delightful experience for customers."
 
                     />
 
