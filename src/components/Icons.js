@@ -465,7 +465,7 @@ export const LinkArrow = ({ className, ...rest }) => (
 );
 
 export const YoutubeIcon = ({ className, ...rest }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width={48} height={51} {...rest}>
+    <svg xmlns="http://www.w3.org/2000/svg" width={46} height={48} {...rest}>
 
         <path
             fill="#E70000"
