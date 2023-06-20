@@ -14,10 +14,11 @@ import TransitionEffect from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image);
 
-const MovingImg = ({ title, img, link }) => {
+const MovingImg = ({ title, img, link, w, h }) => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
     const imgRef = useRef(null);
+
 
     function handleMouse(e) {
         imgRef.current.style.display = "inline-block "
@@ -43,9 +44,11 @@ const MovingImg = ({ title, img, link }) => {
                 style={{ x: x, y: y }}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
-                ref={imgRef} src={img} alt={title} className='z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden'
+                ref={imgRef} src={img} alt={title} className={`z-10 w-${w}  h-auto hidden absolute rounded-lg md:!hidden`}
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                width={w}
+                height={h}
             />
 
         </Link >
@@ -75,14 +78,14 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
     )
 }
 
-const Article = ({ img, title, date, link }) => {
+const Article = ({ img, title, date, link, w, h }) => {
     return (
         <motion.li
             initial={{ y: 200 }}
             whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
             viewport={{ once: true }}
             className='sm:flex-col  relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark dark:bg-dark dark:text-light first:mt-0 border border-solid border-dark dark:border-light border-r-4 border-b-4'>
-            <MovingImg title={title} img={img} link={link} />
+            <MovingImg title={title} img={img} link={link} w={w} h={h} />
             <span className='xs:text-sm sm:pl-0 sm:self-start text-primary dark:text-primaryDark font-semib pl-4'>{date}</span>
         </motion.li>
     )
@@ -122,7 +125,10 @@ const articles = () => {
                             "
                             date="June 7, 2023"
                             link="/"
-                            img={article3} />
+                            img={'https://i.imgur.com/QfTd8EG.png'}
+                            w={20}
+                            h={20}
+                        />
 
                         <Article
                             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling
